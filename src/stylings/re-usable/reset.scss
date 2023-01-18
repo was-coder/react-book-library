@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // border: 2px solid red;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #f5f6fa;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 50px;
+  flex-direction: column;
+  min-height: 100vh;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: #ebecf0 0px 3px 6px, #ebecf0 0px 3px 6px;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid #0290ff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #0290ff;
+  color: #daeeff;
+  text-transform: uppercase;
+  width: 15%;
+}

@@ -1,16 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Book from './Book';
 import Form from './Form';
 
 const bookList = [
   {
-    id: 'book1',
+    id: 1,
     title: 'Things Fall Apart',
     author: 'Chinua Achebe'
   },
   {
-    id: 'book2',
+    id: 2,
     title: 'Life is Good',
     author: "Adelakun Abdulwasi'"
   }
@@ -21,15 +20,13 @@ const Books = () => (
     <div className="container">
       <h1 className="booklist-header">List of Books</h1>
 
-      {bookList.map((book) => (
-        <div className="booklist" key={book.id}>
-          <Book book={book} />
-        </div>
-      ))}
+      <div className="booklist">
+        {bookList.map((book) => (
+          <Book book={book} key={book.id} />
+        ))}
+      </div>
 
-      <NavLink className="btn link">Remove Book</NavLink>
-
-      <Form />
+      <Form book={bookList} />
     </div>
   </>
 );

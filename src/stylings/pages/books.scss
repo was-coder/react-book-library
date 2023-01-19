@@ -1,10 +1,23 @@
 .booklist-header {
   color: #0290ff;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.booklist {
+  display: flex;
+  flex-direction: column;
 }
 
 .booklist-div {
-  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid #535353;
+  box-shadow: hsl(228, 14%, 93%) 0 3px 6px, hsl(228, 14%, 93%) 0 3px 6px;
 }
 
 .booklist-h2 {

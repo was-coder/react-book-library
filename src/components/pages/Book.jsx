@@ -1,12 +1,21 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 const Book = ({ book }) => (
   <>
     <div className="booklist-div">
-      <h2 className="booklist-h2">{book.title}</h2>
-      <span className="booklist-span">{book.author}</span>
+      <div>
+        <h2 className="booklist-h2">{book.title}</h2>
+        <span className="booklist-span">{book.author}</span>
+      </div>
+
+      <div>
+        <NavLink className="btn link" id={book.id}>
+          Remove Book
+        </NavLink>
+      </div>
     </div>
   </>
 );

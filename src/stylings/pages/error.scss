@@ -1,0 +1,22 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.errorpage-container {
+  background-image: url('../../../public/assets/404.jpg');
+}
+
+.error-boundary {
+  background: #d4e79e;
+}
+
+.error-link {
+  font-size: 50px;
+}
+
+details {
+  cursor: pointer;
+}

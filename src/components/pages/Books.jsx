@@ -4,12 +4,12 @@ import Form from './Form';
 
 const bookList = [
   {
-    id: 1,
+    bookId: 1,
     title: 'Things Fall Apart',
     author: 'Chinua Achebe'
   },
   {
-    id: 2,
+    bookId: 2,
     title: 'Life is Good',
     author: "Adelakun Abdulwasi'"
   }
@@ -22,11 +22,11 @@ const Books = () => (
 
       <div className="booklist">
         {bookList.map((book) => (
-          <Book book={book} key={book.id} />
+          <Book book={book} key={book.bookId} />
         ))}
       </div>
 
-      <Form book={bookList} />
+      <Form />
     </div>
   </>
 );

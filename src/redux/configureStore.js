@@ -1,4 +1,3 @@
-// /* eslint-disable import/no-extraneous-dependencies */
 import {
   combineReducers,
   applyMiddleware,
@@ -15,7 +14,7 @@ const storage = localStorage.getItem('reduxState')
   ? JSON.parse(localStorage.getItem('reduxState'))
   : {};
 
-const store = createStore(rootReducer, applyMiddleware(logger), storage);
+const store = createStore(rootReducer, storage, applyMiddleware(logger));
 
 store.subscribe(() => {
   localStorage.setItem('reduxState', JSON.stringify(store.getState()));
